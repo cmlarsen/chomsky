@@ -40,5 +40,16 @@
           </div>
         </div>
 
+
+        NAV:
+        <aside>
+          {% for section in site.data.docs %}
+          <h4>{{ section.title %}}
+          {% include docs_ul.html items=section.docs %}
+
+          {% endfor %}
+        </aside>
+
+
     </body>
 </html>
