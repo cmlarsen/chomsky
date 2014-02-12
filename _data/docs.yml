@@ -1,4 +1,26 @@
 - title: Getting Started
   docs:
-  -home
-  -install
+  - introduction:
+  - install-noam-moderator:
+  - add-participants: 
+  - use-the-noam-interface:
+    - network
+- title: Reference
+  docs:
+  - ref_page_name1
+  - ref_page_name2
+
+- title: Lemmas
+  docs:
+  - lemma_page_name1
+  - lemma_page_name2
+
+- title: Components
+  docs:
+  - comp_page_name1
+  - comp_page_name2
+
+- title: FAQS
+  docs:
+  - faq_page_name1
+  - faq_page_name2

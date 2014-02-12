@@ -1,8 +1,8 @@
---
+---
 layout: docs
 title: Welcome
-permalink: /docs/home/
---
+permalink: /
+---
 
 #This is the index.
 Howdy.

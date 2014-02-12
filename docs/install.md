@@ -1,7 +1,7 @@
---
+---
 layout: docs
 title: Install Noam Moderator
-permalink: /docs/install/
---
+permalink: /install/
+---
 
 Lets install some stuff. 
