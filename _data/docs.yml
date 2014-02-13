@@ -1,22 +1,25 @@
+- category: '[Internal] Guides'
+  docs:
+  - {name: Setting up Noam Docs, url: creating-the-noam-docs}
 - category: Getting Started
   docs:
-  - {title: Introduction, url: introduction}
-  - {title: Install Noam Moderator, url: install-noam}  
-  - {title: Add Participants, url: add-participants}
+  - {name: Introduction, url: introduction}
+  - {name: Install Noam Moderator, url: install-noam}
+  - {name: Add Participants, url: add-participants}
 - category: Reference
   docs:
-  - {title: Lexicon, url: lexicon}
-  - {title: Noam Protocol, url: noam-protocol}
-      
+  - {name: Lexicon, url: lexicon}
+  - {name: Noam Protocol, url: noam-protocol}
+
 - category: Demo Top Category
   docs:
-  - {title: Item 1, url: install}
-  - {title: Item 2, url: introduction}
+  - {name: Item 1, url: install}
+  - {name: Item 2, url: introduction}
   - category: Demo Sub Category
     docs:
-    - {title: Item 1, url: introduction}
-    - {title: Item 2, url: introduction}
+    - {name: Item 1, url: introduction}
+    - {name: Item 2, url: introduction}
     - category: Demo Sub Sub Category
       docs:
-      - {title: Item 1, url: introduction}
-      - {title: Item 2, url: introduction}
+      - {name: Item 1, url: introduction}
+      - {name: Item 2, url: introduction}

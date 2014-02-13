@@ -3,7 +3,7 @@
 {% for item in items %}
     {% assign item_url =  item.url | prepend: '/docs/'| prepend: {{site.baseurl}}  | append: '/' %}
     {% if item.docs == null %}
-        <li><a href="{{item_url}}">{{item.title}}</a></li>        
+        <li><a href="{{item_url}}">{{item.name}}</a></li>        
     {% endif %}
     {% if item.category %}
         <li>
