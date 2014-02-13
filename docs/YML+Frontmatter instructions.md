@@ -49,7 +49,8 @@ More info can be found on the [Jekyll](http://jekyllrb.com/docs/posts/) site and
 
 ##The docs.yml file
 
-The docs.yml file lives in /_data/ folder. It is a [YAML](http://en.wikipedia.org/wiki/YAML) file that defines the navigation hierarchy. You can add/edit/remove links from the side navigation by editting this file. 
+The docs.yml file lives in /_data/ folder. It is a [YAML](http://en.wikipedia.org/wiki/YAML) file that defines the navigation hierarchy. You can add/edit/remove links from the side navigation by editing this file. You can download it from [Github](https://github.com/cmlarsen/chomsky/blob/gh-pages/_data/docs.yml).
+
 
 YAML strictly depends on indenting to descibe the data relationships, so be mindful of that when editing this document.  
 
