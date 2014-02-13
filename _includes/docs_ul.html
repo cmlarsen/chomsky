@@ -1,25 +1,17 @@
 {% assign items = include.items %}
 
-<ul>
-	{% for item in items %}
-		{% for i in item %}
-		{{ i }} 
-		{% endfor %}
-		{{item}}<br>
-		{% assign item_url = item | prepend:'/docs/' | append:'/' %}
-		
-		{% if item_url == page.url %}
-			{% assign active_class = 'active' %}
-		{% else %}
-			{% assign active_class = '' %}
-		{% endif %}
-
-		{% for p in site.pages %}
-		<!-- {{p.title}}<br> -->
-			{% if p.url == item_url %}
-<!-- 				<li class="{{ active_class }}"><a href="{{ site.url }}{{ p.url}}">{{ p.title }}</a></li> -->
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
-</ul>
+{% for item in items %}
+    {% assign item_url = item.url | prepend: '/docs/' | append: '/' %}
+    {% if item.docs == null %}
+        <li><a href="{{item_url}}">{{item.title}}</a></li>        
+    {% endif %}
+    {% if item.category %}
+        <li>
+            <b>{{item.category}}</b>
+            <ul>
+            {% include docs_ul.html items=item.docs %}
+            </ul>
+        </li>   
+    {% endif %}
+{% endfor %}
 

@@ -1,0 +1,10 @@
+<ul>
+{% for section in site.data.docs %}
+    <li>
+        <b>{{section.category}}</b>
+        <ul>
+            {% include docs_ul.html items=section.docs %}
+        </ul>  
+    </li>
+{% endfor %}
+</ul>

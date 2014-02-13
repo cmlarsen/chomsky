@@ -1,26 +1,22 @@
-- title: Getting Started
+- category: Getting Started
   docs:
-  - introduction:
-  - install-noam-moderator:
-  - add-participants: 
-  - use-the-noam-interface:
-    - network
-- title: Reference
+  - {title: Introduction, url: introduction}
+  - {title: Install Noam Moderator, url: install-noam}  
+  - {title: Add Participants, url: add-participants}
+- category: Reference
   docs:
-  - ref_page_name1
-  - ref_page_name2
-
-- title: Lemmas
+  - {title: Lexicon, url: lexicon}
+  - {title: Noam Protocol, url: noam-protocol}
+      
+- category: Demo Top Category
   docs:
-  - lemma_page_name1
-  - lemma_page_name2
-
-- title: Components
-  docs:
-  - comp_page_name1
-  - comp_page_name2
-
-- title: FAQS
-  docs:
-  - faq_page_name1
-  - faq_page_name2
+  - {title: Item 1, url: install}
+  - {title: Item 2, url: introduction}
+  - category: Demo Sub Category
+    docs:
+    - {title: Item 1, url: introduction}
+    - {title: Item 2, url: introduction}
+    - category: Demo Sub Sub Category
+      docs:
+      - {title: Item 1, url: introduction}
+      - {title: Item 2, url: introduction}

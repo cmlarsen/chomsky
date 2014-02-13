@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: noam_docs
 title: Welcome
 permalink: /
 ---
