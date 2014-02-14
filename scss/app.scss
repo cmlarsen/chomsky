@@ -73,10 +73,14 @@ $white: #ffffff;
 //
 body{
 	background-color:$white;
+	// padding-top:rem-calc(131.9);
 }
 
 
 header{
+	// position:fixed;
+	// z-index:999;
+	// width:100%;
 	background-color:$white;
 	padding-top: 2em;
 	#logo{
@@ -131,7 +135,7 @@ header{
 }
 
 #hero{
-	background-image:url(../images/img_hero_bg.jpg);
+	background-image:url(../images/img_hero_bg2.jpg);
 	background-position:center;
 	height:rem-calc(448);
 	background-repeat:none;
