@@ -10,4 +10,9 @@ $(document).ready(function(){
 		// console.log("howdy", this);
 	});
 
+	//add fix for when window is resized and the header covers up the content;
+
+	//accordion nav?
+
+
 });
