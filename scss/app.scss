@@ -39,6 +39,10 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+
+
+
+
 @mixin gradientbg {
 	background: rgb(248,253,255); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -67,15 +71,32 @@
 }
 
 //colors
-$brand_grey: #b9babd;
+$brand_black: #242a31;
+$brand_grey: #6b7076;
+$brand_mid_grey: #474b50;
+$brand_mid_purple: #46007a;
+$brand_dark_purple: #7f00de;
+$brand_pink: #af007c;
+$brand_teal: #01aeff;
+
+
 
 $white: #ffffff;
 //
 body{
 	background-color:$white;
+	-webkit-font-smoothing: antialiased;
+	color:$brand_black;
 	// padding-top:rem-calc(131.9);
 }
+section{
+	text-align:center;
+}
 
+code{
+	color:$brand_grey;
+	font-weight:normal;
+}
 
 header{
 	// position:fixed;
@@ -92,23 +113,38 @@ header{
 		ul{ 
 			margin-left:0;
 			li{
+
 				margin-left:0;
-				font-size: rem-calc(14);
+				font-size: rem-calc(16);
 				list-style:none;
 				text-transform:uppercase;
 				padding-top:0.5em;
+				a, a:link, a:active,a:visited, a:hover{
+				-webkit-font-smoothing: subpixel-antialiased;
+					color:$brand_mid_purple;
+					letter-spacing: 2px;
+					line-height: 1em;
+				}
 				a.active{
+
 					font-weight:bold;
 				}
 			}
-			.button{
-				padding-top:0.3em;
+			a.button{
+				padding-top:0.6em;
 				padding-bottom:0.3em;
-				padding-left: 1em;
-				padding-right:1em;
+				padding-left: rem-calc(17);
+				padding-right: rem-calc(17);
+				// padding: 1em 0.6em 1em 0.3em;
+				// margin: 0.5em auto auto 0;
 				font-size: inherit;
 				margin-bottom:0;
-
+				
+				line-height:1em;
+				color:$white !important;
+				a, a:link, a:active,a:visited, a:hover{
+					color:$white;
+				}
 			}
 		}
 	}
@@ -139,6 +175,7 @@ header{
 	background-position:center;
 	height:rem-calc(448);
 	background-repeat:none;
+
 }
 
 #how{
@@ -151,6 +188,33 @@ header{
 footer{
 	@include gradientbg;	
 }
+h1{
+	color:$brand_black;
+	text-transform:uppercase;
+	font-weight:bold;
+
+}
+h2{
+	color:$brand_mid_grey;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+h3{
+
+	color:$brand_mid_purple;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+h4{
+	color:$brand_pink;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+h5{
+	color:$brand_teal;
+	text-transform:uppercase;
+	font-weight:bold;
+}
 @media #{$medium-up}{
 	header{
 		nav{
@@ -160,25 +224,32 @@ footer{
 					font-size:rem-calc(11);
 					color:$brand_grey;
 					content:"|";
-					padding:0 1em;
+					padding:0 rem-calc(17);
+					margin-left:-5px; //fix space after inline block
 				}
 				li{
 					font-size: rem-calc(14);
 					display:inline-block;
-					text-transform:uppercase;
+					// float:left;
 					
+					text-transform:uppercase;
+					font-weight:500;
+					-webkit-font-smoothing: subpixel-antialiased;
 					a.active{
 						font-weight:bold;
 						padding-bottom:0.4em;
-						// border-bottom:2px solid $brand_grey;	
 						background-image:url(../images/underline.png);
 						background-position:center bottom;
 						background-repeat:no-repeat;
 						background-size: 55% 2px;
 					}
+					a:not(.icon):hover{
+						font-weight:bold;
+
+					}
 				}
 				.button{
-					
+					margin-left:0.5em;
 				}
 			}
 
